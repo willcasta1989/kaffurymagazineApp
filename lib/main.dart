@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'pag_1.dart';
+import 'pag_2.dart';
 
 void main() => runApp(MyApp());
 
@@ -7,6 +9,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: MainScreen(),
+      routes: {
+        '/pag_1': (context) => PageOne(),
+        '/pag_2': (context) => PageTwo(),
+      },
     );
   }
 }
@@ -56,8 +62,8 @@ class MainScreen extends StatelessWidget {
                           Expanded(
                             flex: 5,
                             child: Container(
-                              color: Colors.transparent,
-                              padding: EdgeInsets.all(15),
+                              color: Color.fromARGB(0, 204, 26, 26),
+                              padding: EdgeInsets.all(20),
                               child: Center(
                                 child: Text(
                                   'Prueba nuestra aplicación kaffury magazine y disfruta de contenido exclsivo',
@@ -92,7 +98,7 @@ class MainScreen extends StatelessWidget {
                               ),
                               child: ElevatedButton(
                                 onPressed: () {
-                                  // Lógica del botón de "Registrarse"
+                                  Navigator.pushNamed(context, '/pag_1');
                                 },
                                 style: ElevatedButton.styleFrom(
                                   primary: Color(0xFFE11F26),
@@ -121,7 +127,7 @@ class MainScreen extends StatelessWidget {
                               ),
                               child: ElevatedButton(
                                 onPressed: () {
-                                  // Lógica del botón de "Prueba sin registrarte"
+                                  Navigator.pushNamed(context, '/pag_2');
                                 },
                                 style: ElevatedButton.styleFrom(
                                   primary: Color(0xFFE11F26),
