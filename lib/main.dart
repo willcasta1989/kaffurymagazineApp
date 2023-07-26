@@ -42,7 +42,7 @@ class MainScreen extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           Expanded(
-                            flex: 2,
+                            flex: 5,
                             child: Padding(
                               padding: EdgeInsets.all(3),
                               child: Image.asset(
@@ -51,7 +51,7 @@ class MainScreen extends StatelessWidget {
                             ),
                           ),
                           Expanded(
-                            flex: 3,
+                            flex: 10,
                             child: Padding(
                               padding: EdgeInsets.all(3),
                               child: Image.asset(
@@ -66,12 +66,12 @@ class MainScreen extends StatelessWidget {
                               padding: EdgeInsets.all(20),
                               child: Center(
                                 child: Text(
-                                  'Prueba nuestra aplicación kaffury magazine y disfruta de contenido exclsivo',
+                                  'Prueba nuestra aplicación kaffury magazine y disfruta de contenido exclusivo',
                                   style: TextStyle(
                                     color: Color.fromARGB(255, 233, 29, 29),
                                     fontSize: 20,
-                                    fontFamily:
-                                        'Arial', // Cambiar por la fuente deseada
+                                    fontFamily: 'Arial',
+                                    fontWeight: FontWeight.bold,
                                   ),
                                 ),
                               ),
@@ -82,7 +82,7 @@ class MainScreen extends StatelessWidget {
                     ),
                   ),
                   Expanded(
-                    flex: 2,
+                    flex: 1,
                     child: Container(
                       color: Colors.transparent,
                       child: Column(
@@ -108,36 +108,7 @@ class MainScreen extends StatelessWidget {
                                   ),
                                 ),
                                 child: Text(
-                                  'Registrarse',
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontFamily:
-                                        'Arial', // Cambiar por la fuente deseada
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                          Expanded(
-                            child: Container(
-                              margin: EdgeInsets.all(5),
-                              decoration: BoxDecoration(
-                                color: Color(0xFFE11F26),
-                                borderRadius: BorderRadius.circular(5),
-                              ),
-                              child: ElevatedButton(
-                                onPressed: () {
-                                  Navigator.pushNamed(context, '/pag_2');
-                                },
-                                style: ElevatedButton.styleFrom(
-                                  primary: Color(0xFFE11F26),
-                                  padding: EdgeInsets.all(5),
-                                  shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(5),
-                                  ),
-                                ),
-                                child: Text(
-                                  'Prueba sin registrarte',
+                                  'Prueba gratuita',
                                   style: TextStyle(
                                     color: Colors.white,
                                     fontFamily:
