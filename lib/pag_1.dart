@@ -35,7 +35,7 @@ class _PageOneState extends State<PageOne> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Prueba gratuita'),
+        title: const Text('Prueba gratuita'),
       ),
       body: Container(
         color: Colors.grey[200],
@@ -49,12 +49,12 @@ class _PageOneState extends State<PageOne> {
               child: ElevatedButton(
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
-                  primary: Colors.red,
+                  backgroundColor: Colors.red,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(5),
                   ),
                 ),
-                child: Text(
+                child: const Text(
                   'Revista Edición 54',
                   style: TextStyle(
                     color: Colors.white,
@@ -63,7 +63,7 @@ class _PageOneState extends State<PageOne> {
                 ),
               ),
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             SizedBox(
               width: 300,
               height: 200,
@@ -72,33 +72,12 @@ class _PageOneState extends State<PageOne> {
                   Navigator.pushNamed(context, '/pag_2');
                 },
                 style: ElevatedButton.styleFrom(
-                  primary: Colors.red,
+                  backgroundColor: Colors.red,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(5),
                   ),
                 ),
-                child: Text(
-                  'Revista Edición 53',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 20,
-                  ),
-                ),
-              ),
-            ),
-            SizedBox(height: 10),
-            SizedBox(
-              width: 300,
-              height: 200,
-              child: ElevatedButton(
-                onPressed: () {},
-                style: ElevatedButton.styleFrom(
-                  primary: Colors.red,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(5),
-                  ),
-                ),
-                child: Text(
+                child: const Text(
                   'Revista Edición 52',
                   style: TextStyle(
                     color: Colors.white,
@@ -107,21 +86,44 @@ class _PageOneState extends State<PageOne> {
                 ),
               ),
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
+            SizedBox(
+              width: 300,
+              height: 200,
+              child: ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, '/edicion_53');
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.red,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(5),
+                  ),
+                ),
+                child: const Text(
+                  'Revista Edición 53',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
+                  ),
+                ),
+              ),
+            ),
+            const SizedBox(height: 10),
             SizedBox(
               width: 50,
               height: 20,
               child: ElevatedButton(
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
-                  primary: Colors.red[100],
+                  backgroundColor: Colors.red[100],
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(5),
                   ),
                 ),
                 child: Text(
                   '${(countdown / 60).floor()} min ${(countdown % 60).toString().padLeft(2, '0')} sec',
-                  style: TextStyle(
+                  style: const TextStyle(
                     color: Colors.black,
                     fontSize: 10,
                   ),

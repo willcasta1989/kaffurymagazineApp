@@ -6,13 +6,13 @@ class PageTwo extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text('Página Dos'),
+        title: const Text('Página Dos'),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
+            const Text(
               'Contenido de la Página Dos',
               style: TextStyle(fontSize: 24),
             ),
@@ -21,7 +21,7 @@ class PageTwo extends StatelessWidget {
                 // Lógica para volver a la Página Uno
                 Navigator.pop(context);
               },
-              child: Text('Volver a Página Uno'),
+              child: const Text('Volver a Página Uno'),
             ),
           ],
         ),
