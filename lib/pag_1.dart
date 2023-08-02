@@ -8,7 +8,7 @@ class PageOne extends StatefulWidget {
 }
 
 class _PageOneState extends State<PageOne> {
-  int countdown = 10;
+  int countdown = 100;
 
   void startCountdown() {
     const oneSec = Duration(seconds: 1);
@@ -47,7 +47,9 @@ class _PageOneState extends State<PageOne> {
               width: 300,
               height: 200,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, '/edicion_54');
+                },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.red,
                   shape: RoundedRectangleBorder(

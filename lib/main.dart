@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:kaffury_magazine_app/edicion_53.dart';
 import 'pag_1.dart';
 import 'pag_2.dart';
+import 'edicion_54.dart';
 
 void main() => runApp(MyApp());
 
@@ -14,6 +15,7 @@ class MyApp extends StatelessWidget {
         '/pag_1': (context) => PageOne(),
         '/pag_2': (context) => PageTwo(),
         '/edicion_53': (context) => Edicion53(),
+        '/edicion_54': (context) => const Edicion54(),
       },
     );
   }
