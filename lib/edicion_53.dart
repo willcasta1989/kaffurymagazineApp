@@ -25,6 +25,7 @@ class _Edicion53State extends State<Edicion53> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: const Color.fromARGB(255, 219, 28, 28),
         title: const Text('Edición 54'),
       ),
       body: Column(
@@ -36,6 +37,9 @@ class _Edicion53State extends State<Edicion53> {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.red, // Botón rojo
+                ),
                 onPressed: () {
                   setState(() {
                     _imageIndex--;
@@ -47,6 +51,9 @@ class _Edicion53State extends State<Edicion53> {
                 child: const Text('Anterior'),
               ),
               ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.red, // Botón rojo
+                ),
                 onPressed: () {
                   setState(() {
                     _imageIndex++;

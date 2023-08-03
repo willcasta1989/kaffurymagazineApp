@@ -5,16 +5,18 @@ import 'pag_2.dart';
 import 'edicion_54.dart';
 import 'edicion_52.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: const MainScreen(),
       routes: {
         '/pag_1': (context) => PageOne(),
-        '/pag_2': (context) => PageTwo(),
+        '/pag_2': (context) => const PageTwo(),
         '/edicion_53': (context) => Edicion53(),
         '/edicion_54': (context) => const Edicion54(),
         '/edicion_52': (context) => const Edicion52(),

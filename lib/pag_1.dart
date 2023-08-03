@@ -35,10 +35,11 @@ class _PageOneState extends State<PageOne> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: const Color.fromARGB(255, 219, 28, 28),
         title: const Text('Prueba gratuita'),
       ),
       body: Container(
-        color: Colors.grey[200],
+        color: Color.fromARGB(255, 110, 100, 100),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -67,7 +68,7 @@ class _PageOneState extends State<PageOne> {
             ),
             const SizedBox(height: 10),
             SizedBox(
-              width: 300,
+              width: 100,
               height: 200,
               child: ElevatedButton(
                 onPressed: () {
@@ -90,7 +91,7 @@ class _PageOneState extends State<PageOne> {
             ),
             const SizedBox(height: 10),
             SizedBox(
-              width: 300,
+              width: 100,
               height: 200,
               child: ElevatedButton(
                 onPressed: () {
