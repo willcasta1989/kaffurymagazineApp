@@ -71,7 +71,7 @@ class _PageOneState extends State<PageOne> {
               height: 200,
               child: ElevatedButton(
                 onPressed: () {
-                  Navigator.pushNamed(context, '/pag_2');
+                  Navigator.pushNamed(context, '/edicion_52');
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.red,

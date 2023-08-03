@@ -12,10 +12,13 @@ class Edicion54 extends StatefulWidget {
 class _Edicion54State extends State<Edicion54> {
   int _imageIndex = 0;
   final List<String> _imageAssets = [
-    'assets/uno.png',
-    'assets/dos.png',
-    'assets/tres.png',
-    'assets/cuatro.png',
+    'assets/edicion_54/ed54_1.png',
+    'assets/edicion_54/ed54_6.png',
+    'assets/edicion_54/ed54_7.png',
+    'assets/edicion_54/ed54_8.png',
+    'assets/edicion_54/ed54_10.png',
+    'assets/edicion_54/ed54_11.png',
+    'assets/edicion_54/ed54_14.png',
   ];
 
   @override
