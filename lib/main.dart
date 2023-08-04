@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:kaffury_magazine_app/edicion_53.dart';
+import 'regis.dart';
+import 'suscribe.dart';
 import 'pag_1.dart';
-import 'pag_2.dart';
 import 'edicion_54.dart';
 import 'edicion_52.dart';
+import 'login.dart';
 
 void main() => runApp(const MyApp());
 
@@ -15,11 +17,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: const MainScreen(),
       routes: {
-        '/pag_1': (context) => PageOne(),
-        '/pag_2': (context) => const PageTwo(),
+        '/pag_1': (context) => const PageOne(),
+        '/suscribe': (context) => PageTwo(),
         '/edicion_53': (context) => Edicion53(),
         '/edicion_54': (context) => const Edicion54(),
         '/edicion_52': (context) => const Edicion52(),
+        '/login': (context) => LoginPage(),
+        '/regis': (context) => const RegisterPage(),
       },
     );
   }

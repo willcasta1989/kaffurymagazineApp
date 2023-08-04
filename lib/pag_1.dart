@@ -1,14 +1,19 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'suscribe.dart';
 
 class PageOne extends StatefulWidget {
+  const PageOne({super.key});
+
   @override
-  _PageOneState createState() => _PageOneState();
+  _PageOneState createState() {
+    return _PageOneState();
+  }
 }
 
 class _PageOneState extends State<PageOne> {
-  int countdown = 100;
+  int countdown = 10;
 
   void startCountdown() {
     const oneSec = Duration(seconds: 1);
@@ -16,7 +21,11 @@ class _PageOneState extends State<PageOne> {
       if (countdown == 0) {
         timer.cancel();
         // Aquí puedes agregar la lógica para regresar a la página inicial
-        Navigator.pop(context);
+        Navigator.pushReplacement(
+            context,
+            MaterialPageRoute(
+                builder: (context) =>
+                    PageTwo())); // Reemplaza "Login" con el nombre de tu clase de la página de inicio
       } else {
         setState(() {
           countdown--;
